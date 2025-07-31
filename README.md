@@ -5,9 +5,6 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">Komponen Server untuk mendukung interoperabilitas data Cek Kesehatan Gratis (CKG) dengan Sistem Informasi Tuberkulosi (SITB). Menjembatani pertukaran data dua arah terkait kasus TB melalui ekosistem SATUSEHAT/ASIK (Aplikasi Sehat IndonesiaKu), memungkinkan skrining, pemeriksaan dan pemanfaatan data melalui Dashboard dapat terkonsolidasi dalam satu jembatan pertukaran data yang digunakan bersama.
-  
-  Sistem ini merupakan draft awal infrastruktur pertukaran data yang disiapkan menggunkan framework progreif <a href="http://nodejs.org" target="_blank">Node.js</a> untuk efesiensi, skalabilitas dan fleksibilitas aplikasi server nyesuaikan kebutuhan pengembangan pertukaran data SATUSEHAT dimasa depan.</p>
 
 <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
@@ -19,14 +16,27 @@
 <a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
   <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
     <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+  <p align="center">Komponen Server untuk mendukung interoperabilitas data Cek Kesehatan Gratis (CKG) dengan Sistem Informasi Tuberkulosi (SITB). Menjembatani pertukaran data dua arah terkait kasus TB melalui ekosistem SATUSEHAT/ASIK (Aplikasi Sehat IndonesiaKu), memungkinkan skrining, pemeriksaan dan pemanfaatan data melalui Dashboard dapat terkonsolidasi dalam satu jembatan pertukaran data yang digunakan bersama.
+  
+  Sistem ini merupakan draft awal infrastruktur pertukaran data yang disiapkan menggunkan framework progreif <a href="http://nodejs.org" target="_blank">Node.js</a> untuk efesiensi, skalabilitas dan fleksibilitas aplikasi server nyesuaikan kebutuhan pengembangan pertukaran data SATUSEHAT dimasa depan.</p>
 
-Framework [Nest](https://github.com/nestjs/nest) yang digunakan dalam project ini menggunakan bahasa pemrograman TypeScript.
+## Desain Pertukaran Data
+Ada tiga tahapan yang ingin dicapai dari desain konsolidasi data TB ini.
+### 1. Pertukaran data (dua arah) Skrining TB antara ASIK-CKG dengan Aplikasi SITB
+![Integrasi1](./documentation/assets/images/ckg-tb-1.png)
+### 2. Penyajian Dashboard terkait Program TB yang akurat
+![Integrasi2](./documentation/assets/images/ckg-tb-2.png)
+### 3. Menjembatani pertukaran data Rekam Medis Elektronik (RME) dari sistem di Fasilitas  Kesehatan Kesehatan dengan ekosistem pencatatan TB
+![Integrasi3](./documentation/assets/images/ckg-tb-3.png)
+  <p></p>
+
+# Pengembagan
+## Spesifikasi Sistem
+Framework [Nest](https://github.com/nestjs/nest) digunakan dalam project ini menggunakan bahasa pemrograman TypeScript.
 
 ## Setup Web Service
 
@@ -60,7 +70,7 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Deployment
+# Deployment
 Saat Anda siap menerapkan aplikasi NestJS ke produksi, ada beberapa langkah penting yang dapat Anda ambil untuk memastikannya berjalan seefisien mungkin. Lihat [dokumentasi deployment](https://docs.nestjs.com/deployment) untuk informasi lebih lanjut.
 
 Jika Anda mencari platform berbasis cloud untuk menerapkan aplikasi NestJS Anda, lihat [MAU](https://mau.nestjs.com), platform resmi kami untuk menerapkan aplikasi NestJS di AWS. Mau membuat penerapan menjadi mudah dan cepat, hanya membutuhkan beberapa langkah sederhana:
@@ -72,7 +82,7 @@ $ mau deploy
 
 Dengan Mau, Anda dapat menerapkan aplikasi Anda hanya dalam beberapa klik, memungkinkan Anda untuk fokus membangun fitur daripada mengelola infrastruktur.
 
-## Resources
+# Resources
 
 Periksa beberapa sumber daya yang mungkin berguna saat bekerja dengan NestJS:
 
