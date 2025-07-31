@@ -24,8 +24,10 @@
   
   Sistem ini merupakan draft awal infrastruktur pertukaran data yang disiapkan menggunkan framework progreif <a href="http://nodejs.org" target="_blank">Node.js</a> untuk efesiensi, skalabilitas dan fleksibilitas aplikasi server nyesuaikan kebutuhan pengembangan pertukaran data SATUSEHAT dimasa depan.</p>
 
-## Desain Pertukaran Data
-Ada tiga tahapan yang ingin dicapai dari desain konsolidasi data TB ini.
+## Desain Interoperabilitas Data
+![Integrasi0](./documentation/assets/images/ckg-tb-0.png)
+Pengembangan sistem interoperabilitas ini seperti tergambar di atas adalah untuk mengadakan pertukaran data antara ASIK dengan SITB. Ada tiga objektif yang ingin dicapai dari desain konsolidasi data TB ini.
+
 ### 1. Pertukaran data (dua arah) Skrining TB antara ASIK-CKG dengan Aplikasi SITB
 ![Integrasi1](./documentation/assets/images/ckg-tb-1.png)
 ### 2. Penyajian Dashboard terkait Program TB yang akurat
@@ -35,6 +37,16 @@ Ada tiga tahapan yang ingin dicapai dari desain konsolidasi data TB ini.
   <p></p>
 
 # Pengembagan
+## Tahapan Pengembangan Jangka Pendek
+Pengembangan ini akan dibagi menjadi 3 tahap:
+1. *Tahap 1*: Mewujudkan terjadinya interoperabilitas antara SITB dengan ASIK-CKG menggunakan metadata yang ada saat ini.
+2. *Tahap 2*: Membangun sistem notifikasi yang data TB yang tersedia di SITB dan ASIK-CKG untuk kebutuhan pemberitahuan kepada pasien maupun komunitas.
+3. *Tahap 3*: Membangun dashboard pelaporan Tuberkuloasis yang akurat berdasarkan hasil konsolidasi ASIK-CKG/SATUSEHAT Mobile dan SITB.
+![Integrasi4](./documentation/assets/images/ckg-tb-4.png)
+
+## Tahapan Pengembangan Jangka Panjang
+Sesuai dengan objektif ketiga di atas dengan membangun pertukaran data Rekam Medis Elektronik (RME) dari sistem di Fasilitas Kesehatan terkait TB.
+
 ## Spesifikasi Sistem
 Framework [Nest](https://github.com/nestjs/nest) digunakan dalam project ini menggunakan bahasa pemrograman TypeScript.
 
