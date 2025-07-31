@@ -9,7 +9,7 @@
   
   Sistem ini merupakan draft awal infrastruktur pertukaran data yang disiapkan menggunkan framework progreif <a href="http://nodejs.org" target="_blank">Node.js</a> untuk efesiensi, skalabilitas dan fleksibilitas aplikasi server nyesuaikan kebutuhan pengembangan pertukaran data SATUSEHAT dimasa depan.</p>
 
-    <p align="center">
+<p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
